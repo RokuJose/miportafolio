@@ -1,30 +1,248 @@
+/* Iconos*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../iconos/fonts/icomoon.eot?7wxw9b');
+	src:url('../iconos/fonts/icomoon.eot?#iefix7wxw9b') format('embedded-opentype'),
+		url('../iconos/fonts/icomoon.woff?7wxw9b') format('woff'),
+		url('../iconos/fonts/icomoon.ttf?7wxw9b') format('truetype'),
+		url('../iconos/fonts/icomoon.svg?7wxw9b#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\ea8c";
+}
+
+.icon-twitter:before {
+	content: "\ea91";
+}
+
+.icon-github:before {
+	content: "\eab1";
+}
+
+/* Utilidades */
 .u-title
 {
-	color: red;
-	text-decoration: underline;
+	color: #00CCFF;
+	border-bottom: 2px dashed #00CCFF;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: .2em;
 }
 
-.Header
+.u-containerDefault
 {
-
+	width: 800px;
+	margin: 0 auto;
 }
-
+/* MainMenu*/
 .MainMenu
 {
-
+	background: #1E1E1E;
+	text-align: center;
+	height: 3.75em;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
 }
 
+.Mainmenu-list
+{
+	line-height: 3.75em;
+	margin: 0;
+	padding: 0;
+}
+.MainMenu-item
+{
+	display: inline-block;
+}
+
+.MainMenu-link
+{
+	color: #00DBFF;
+	text-decoration: none;
+	margin-right: 1.5em;
+}
+
+.header
+{
+	margin-top: 3.75em;
+	background-image: url('../imagenes/portada.jpg'); 
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: cover;
+	text-align: center;
+	padding: 1.2em 0;
+}
+
+.Header-imageContainer
+{
+    margin: 0;
+}
+
+.Header-image
+{
+	border: 5px solid white;
+	height: 250px;
+	border-radius: 50%;
+	-webkit-transition: .4s;
+	-webkit-transform: rotateY(3960deg);
+}
+.Header-image:hover
+{
+	border-color: #1E1E1E;
+}
+.Header-link
+{
+	color: white;
+	font-size: 2.2em;
+	font-weight: bold;
+	margin: 0;
+}
+
+.Header-name:hover
+{
+	text-decoration: underline;
+}
+.Header-name
+{
+	color: white;
+	font-size: 1.5em;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+/*Perfil*/
 .Profile
 {
-
+	text-align: center;
 }
-
+.Profile-linkTwitter
+{
+	background: #0084b4;
+	color: white;
+	text-decoration: none;
+	padding: .5em 1em;
+	border-radius: 2em;
+	margin-right: .5em;
+}
+.Profile-linkFacebook
+{
+	background: #3b5998;
+	color: white;
+	text-decoration: none;
+	padding: .5em 1em;
+	border-radius: 2em;
+	margin-right: .5em;
+}
+.Profile-linkGitHub
+{
+	background: #333;
+	color: white;
+	text-decoration: none;
+	padding: .5em 1em;
+	border-radius: 2em;
+	margin-right: .5em;
+}
+/*Zona de Trabajo*/
 .Work
 {
-
+	margin-top: 2em;
+	text-align: center;
 }
+.Work-item
+{
+	display: inline-block;
+	margin: 0 1.8em 1.8em 0;
+}
+
+.Work-imageContainer
+{
+	margin:0;
+}
+
+.Work-description
+{
+	color: #515151;
+	font-size: 1.1em;
+	font-style: italic;
+}
+
+/* Zona de Contacto*/
 
 .Footer
 {
+	background-image: url('../imagenes/footer.jpg'); 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 2em 0;
+	text-align: center;
+}
 
+.Footer-form
+{
+	text-align: center;
+	display: inline-block;
+
+}
+
+.Footer-title
+{
+	color: white;
+}
+.Footer-left
+{
+	display: inline-block;
+	width: 32em;
+	text-align: center;
+	vertical-align: top;
+	margin-right: 3em;
+}
+.Footer-formInput
+{
+	background: white;
+	border: none;
+	display: block;
+	border-radius: .8em;
+	padding: .5em;
+	margin: 0 auto 1em;
+}
+
+.Footer-textarea
+{
+	background: white;
+	border: none;
+	display: block;
+	border-radius: .8em;
+	padding: .5em;
+	margin: 0 auto 1em;	
+	resize: none;
+}
+
+.Footer-button
+{
+	background: orange;
+	color: white;
+	border-radius: 1em;
+	border: none;
+	padding: .5em 1em;
 }
